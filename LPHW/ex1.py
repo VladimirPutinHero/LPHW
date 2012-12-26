@@ -11,3 +11,7 @@ if __name__ == '__main__':
     print "123444567999aaaaaaaaaaaa123"
     print "русский текст"
     print "русс эгейн"
+#C:\Programs\workspace\.metadata\.plugins\com.aptana.portablegit.win32\bin\git.exe
+#this is Git executable
+#Checkbox "Push" in commit dialog
+#Aptana Studio\Themes = Pydev
