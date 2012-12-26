@@ -10,3 +10,4 @@ if __name__ == '__main__':
     print 'I "said" do not touch this.'
     print "123444567999aaaaaaaaaaaa123"
     print "русский текст"
+    print "русс эгейн"
