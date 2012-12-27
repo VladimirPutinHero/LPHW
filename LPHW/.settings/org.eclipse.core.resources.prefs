@@ -1,3 +1,7 @@
+=\=\=\=\=\=\=
+<<<<<<<=HEAD
+>>>>>>>=9e312f8bae4307caf2736df4ee4b1698089ea5a0
 eclipse.preferences.version=1
 encoding/ex1.py=utf-8
-encoding/ex7.py=utf-8
+encoding/ex7.py=UTF-8
+encoding/info.txt=UTF-8
