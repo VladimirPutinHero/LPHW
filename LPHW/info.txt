@@ -2,3 +2,4 @@ Current lesson:
 Exercise 11: Asking Questions
 Link:
 http://learnpythonthehardway.org/book/ex11.html
+asas
