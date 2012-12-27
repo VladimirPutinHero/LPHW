@@ -1,17 +1,22 @@
 #encoding=utf-8
 
-if __name__ == '__main__':
-    print "Hello World!"
-    print "Hello Again"
-    print "I like typing this."
-    print "This is fun."
-    print 'Yay! Printing.'
-    print "I'd much rather you 'not'."
-    print 'I "said" do not touch this.'
-    print "123444567999aaaaaaaaaaaa123"
-    print "русский текст"
-    print "русс эгейн1111"
-#C:\Programs\workspace\.metadata\.plugins\com.aptana.portablegit.win32\bin\git.exe
-#this is Git executable
-#Checkbox "Push" in commit dialog
-#Aptana Studio\Themes = Pydev
+x = "There are %d types of people." % 10
+binary = "binary"
+do_not = "don't"
+y = "Those who know %s and those who %s." % (binary, do_not)
+
+print x
+print y
+
+print "I said: %r." % x
+print "I also said: '%s'." % y
+
+hilarious = False
+joke_evaluation = "Isn't that joke so funny?! %r"
+
+print joke_evaluation % hilarious
+
+w = "This is the left side of..."
+e = "a string with a right side."
+
+print w + e
