@@ -2,3 +2,13 @@ Current lesson:
 Exercise 11: Asking Questions
 Link1:
 http://learnpythonthehardway.org/book/ex11.html
+
+In order to correct commit and push:
+On all machines should be set correct (the same?) value of core.autocrlf option
+For windows should be true
+
+to see current value:
+git config --get core.autocrlf
+
+to set value:
+git config --global core.autocrlf true
