@@ -20,4 +20,4 @@ w = "This is the left side of..."
 e = "a string with a right side."
 
 print w + e
-#sdsssasassssssss1111111ыыфффффssssdsd
+#sdsssasassssssss1111111ыыфффффssssdsdsdsdsdsd
