@@ -1,4 +1,4 @@
 Current lesson: 
 Exercise 11: Asking Questions
-Link:
+Link1:
 http://learnpythonthehardway.org/book/ex11.html
