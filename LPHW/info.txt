@@ -1,7 +1,7 @@
 Current lesson: 
-Exercise 11: Asking Questions
+Exercise 14: Prompting And Passing
 Link1:
-http://learnpythonthehardway.org/book/ex11.html
+http://learnpythonthehardway.org/book/ex14.html
 
 In order to correct commit and push:
 On all machines should be set correct (the same?) value of core.autocrlf option

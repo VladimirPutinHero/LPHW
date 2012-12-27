@@ -1,21 +1,8 @@
 #encoding=utf-8
 
-tabby_cat = "\tI'm tabbed in. %r" % "double \" and single\' quotes"
-persian_cat = "I'm split%son a line." % '\n'
-backslash_cat = "I'm \\ a \\ cat."
+age = raw_input("How old are you? ")
+height = raw_input("How tall are you? ")
+weight = raw_input("How much do you weigh? ")
 
-fat_cat = '''
-I'll do a listф:
-\t* Cat food
-\t* Fishies
-\t* Catnip\n\t* Grass
-'''
-
-print tabby_cat
-print persian_cat
-print backslash_cat
-print fat_cat
-# while True:
-#     for i in ["/", "-", "|", "\\", "|"]:
-#         print "%s\r" % i,
-#sdsdsdasasasasasasssssasasыыыы
+print "So, you're %r old, %r tall and %r heavy." % (
+    age, height, weight)
