@@ -2,11 +2,7 @@
 
 from sys import argv
 
-script, first, second, third, fourth = argv
-
-ciis = raw_input('Give me:')
-print "The script is called:", script
-print "Your first variable is:", first
-print "Your second variable is:", second
-print "Your third variable is:", third
-print "Your gave:", fourth + ciis
+script, filename = argv
+f = open(filename)
+print f.read()
+f.close()
