@@ -1,25 +1,31 @@
 #encoding=utf-8
 
-people = 30
-cars = 40
-buses = 15
+
+def wh(c, step):
+    numbers = []
+    i = 0
+    while i < c:
+        print "At the top i is %d" % i
+        numbers.append(i)
+        i = i + step
+        print "Numbers now: ", numbers
+        print "At the bottom i is %d" % i
+    return numbers
 
 
-if cars > people and buses < cars:
-    print "We should take the cars."
-elif cars < people:
-    print "We should not take the cars."
-else:
-    print "We can't decide."
+def wh_for(c, step):
+    numbers = []
+    for i in range(0, c, step):
+        print "At the top i is %d" % i
+        numbers.append(i)
+        print "Numbers now: ", numbers
+        print "At the bottom i is %d" % i
+    return numbers
 
-if buses > cars:
-    print "That's too many buses."
-elif buses < cars:
-    print "Maybe we could take the buses."
-else:
-    print "We still can't decide."
+c = 10
+step = 2
+numbers = wh_for(c, step)
+print "The numbers: "
 
-if people > buses:
-    print "Alright, let's just take the buses."
-else:
-    print "Fine, let's stay home then."
+for num in numbers:
+    print num,
