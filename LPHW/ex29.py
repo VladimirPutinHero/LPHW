@@ -5,9 +5,9 @@ from sys import exit
 
 def gold_room():
     print "This room is full of gold.  How much do you take?"
-    next = raw_input("> ")
-    if "0" in next or "1" in next:
-        how_much = int(next)
+    nxt = raw_input("> ")
+    if "0" in nxt or "1" in nxt:
+        how_much = int(nxt)
     else:
         dead("Man, learn to type a number.")
 
@@ -26,16 +26,17 @@ def bear_room():
     bear_moved = False
 
     while True:
-        next = raw_input("> ")
+        nxt = raw_input("> ")
 
-        if next == "take honey":
+        if nxt == "take honey":
             dead("The bear looks at you then slaps your face off.")
-        elif next == "taunt bear" and not bear_moved:
-            print "The bear has moved from the door. You can go through it now."
+        elif nxt == "taunt bear" and not bear_moved:
+            print """The bear has moved from the door.
+                    You can go through it now."""
             bear_moved = True
-        elif next == "taunt bear" and bear_moved:
+        elif nxt == "taunt bear" and bear_moved:
             dead("The bear gets pissed off and chews your leg off.")
-        elif next == "open door" and bear_moved:
+        elif nxt == "open door" and bear_moved:
             gold_room()
         else:
             print "I got no idea what that means."
@@ -45,15 +46,23 @@ def cthulhu_room():
     print "Here you see the great evil Cthulhu."
     print "He, it, whatever stares at you and you go insane."
     print "Do you flee for your life or eat your head?"
+    print "Or you want to following Cthulhu?"
 
-    next = raw_input("> ")
+    nxt = raw_input("> ")
 
-    if "flee" in next:
+    if "flee" in nxt:
         start()
-    elif "head" in next:
+    elif "head" in nxt:
         dead("Well that was tasty!")
+    elif "follow" in nxt:
+        hell_room()
     else:
         cthulhu_room()
+
+
+def hell_room():
+    print "Now you inda HELL!!! Ahhaahaaahaa!"
+    print "All you base are belong to us!"
 
 
 def dead(why):
@@ -66,14 +75,11 @@ def start():
     print "There is a door to your right and left."
     print "Which one do you take?"
 
-    next = raw_input("> ")
+    nxt = raw_input("> ")
 
-    if next == "left":
+    if nxt == "left":
         bear_room()
-    elif next == "right":
+    elif nxt == "right":
         cthulhu_room()
     else:
         dead("You stumble around the room until you starve.")
-
-
-start()

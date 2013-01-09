@@ -1,6 +1,6 @@
 Current lesson: 
 Link1:	
-http://learnpythonthehardway.org/book/ex36.html
+http://learnpythonthehardway.org/book/ex40.html
 
 In order to correct commit and push:
 On all machines should be set correct (the same?) value of core.autocrlf option
