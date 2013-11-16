@@ -5,6 +5,7 @@ def apple():
     print "I AM APPLES!"
 print "I AM APPLES!2"
 print "I AM APPLES!3"
+print "I AM APPLES!4"
 #x = "There are %d types of people." % 10
 #binary = "binary"
 #do_not = "don't"
