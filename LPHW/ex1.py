@@ -3,7 +3,7 @@
 
 def apple():
     print "I AM APPLES!"
-
+print "I AM APPLES!2"
 #x = "There are %d types of people." % 10
 #binary = "binary"
 #do_not = "don't"
