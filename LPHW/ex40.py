@@ -1,9 +1,14 @@
-#encoding=utf-8
+# encoding=utf-8
 
 
-#import ex1
+# import ex1
 
-#ex1.apple()
+# ex1.apple()
+
+import sys
+from urllib import urlopen
+import random
+
 
 class MyStuff(object):
     def __init__(self):
@@ -11,6 +16,7 @@ class MyStuff(object):
 
     def apple(self):
         print "I AM Glassy Apples!"
+
 
 a = ["line1", "line2", "line3"]
 b = ["parade1", "parade2", "parade3"]
@@ -25,6 +31,7 @@ class Song(object):
         for line in self.lyrics:
             print line
 
+
 happy_bday = Song(a)
 
 bulls_on_parade = Song(b)
@@ -38,26 +45,22 @@ thing.apple()
 print thing.tangerine
 
 
-import random
-from urllib import urlopen
-import sys
-
 WORD_URL = "http://learncodethehardway.org/words.txt"
 WORDS = []
 
 PHRASES = {
     "class %%%(%%%):":
-      "Make a class named %%% that is-a %%%.",
+    "Make a class named %%% that is-a %%%.",
     "class %%%(object):\n\tdef __init__(self, ***)":
-      "class %%% has-a __init__ that takes self and *** parameters.",
+    "class %%% has-a __init__ that takes self and *** parameters.",
     "class %%%(object):\n\tdef ***(self, @@@)":
-      "class %%% has-a function named *** that takes self and @@@ parameters.",
+    "class %%% has-a function named *** that takes self and @@@ parameters.",
     "*** = %%%()":
-      "Set *** to an instance of class %%%.",
+    "Set *** to an instance of class %%%.",
     "***.***(@@@)":
-      "From *** get the *** function, and call it with parameters self, @@@.",
+    "From *** get the *** function, and call it with parameters self, @@@.",
     "***.*** = '***'":
-      "From *** get the *** attribute and set it to '***'."
+    "From *** get the *** attribute and set it to '***'."
 }
 
 # do they want to drill phrases first
